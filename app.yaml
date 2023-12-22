@@ -1,0 +1,8 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  DB_HOST: 'mysql-database.czrn9xpuxd4a.us-east-2.rds.amazonaws.com'
+  DB_USER: 'admin'
+  DB_PASSWORD: 'Ea12345678!'
+  DB_PORT: '3306'
